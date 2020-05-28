@@ -36,6 +36,8 @@ double rnorm_trunc(double mu, double sigma, double lower, double upper);
 //' @param b_beta default = 15, spike and slab for beta_rj
 //' @param beta_lim = 5, limit of beta
 // [[Rcpp::export]]
+
+// TODO: Aaron: Here is the MCMC implementation?
 List zinb_w_cov(NumericMatrix Y_mat, NumericMatrix X_mat,
              NumericVector z_vec, 
              NumericVector s_vec,
@@ -861,6 +863,7 @@ List zinb_w_cov(NumericMatrix Y_mat, NumericMatrix X_mat,
 }
 
 
+// TODO: Aaron: Distributional procedures of some kind.
 double rnorm_trunc(double mu, double sigma, double lower, double upper)
 {
   int change;

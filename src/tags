@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/1c004b3/
+CallEntries	RcppExports.cpp	/^static const R_CallMethodDef CallEntries[] = {$/;"	v	typeref:typename:const R_CallMethodDef[]	file:
+R_init_IntegrativeBayes	RcppExports.cpp	/^RcppExport void R_init_IntegrativeBayes(DllInfo *dll) {$/;"	f	typeref:typename:RcppExport void
+_IntegrativeBayes_zinb_w_cov	RcppExports.cpp	/^RcppExport SEXP _IntegrativeBayes_zinb_w_cov(SEXP Y_matSEXP, SEXP X_matSEXP, SEXP z_vecSEXP, SEX/;"	f	typeref:typename:RcppExport SEXP
+exp_rs	ZINBwCOV.cpp	/^double exp_rs(double a, double b)$/;"	f	typeref:typename:double
+half_norm_rs	ZINBwCOV.cpp	/^double half_norm_rs(double a, double b)$/;"	f	typeref:typename:double
+norm_rs	ZINBwCOV.cpp	/^double norm_rs(double a, double b)$/;"	f	typeref:typename:double
+rnorm_trunc	ZINBwCOV.cpp	/^double rnorm_trunc(double mu, double sigma, double lower, double upper)$/;"	f	typeref:typename:double
+unif_rs	ZINBwCOV.cpp	/^double unif_rs(double a, double b)$/;"	f	typeref:typename:double
+zinb_w_cov	ZINBwCOV.cpp	/^List zinb_w_cov(NumericMatrix Y_mat, NumericMatrix X_mat,$/;"	f	typeref:typename:List
