@@ -42,6 +42,23 @@ library(IntegrativeBayes)
 load(system.file("extdata/Example_data.Rdata", package = "IntegrativeBayes"));
 ```
 
+delta.mat is the true delta matrix.
+```{r}
+dim(delta.mat)
+```
+
+gamma.vec is the true gamma vector.  Another gamma vector is inferred.
+```{r}
+gamma.vec
+```
+
+
+X.mat is the observec covariates from the environment.
+```{r}
+summary(X.mat); dim(X.mat)
+```
+
+
 ## Preprocessing
 ```{r preprocess}
 # keep the features that have at least 2 observed counts for both groups:

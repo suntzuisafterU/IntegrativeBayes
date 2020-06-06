@@ -32,12 +32,15 @@ Y.filter = function(Ycount, zvec, min.number = 2){
               Y.filter = Ycount[, filter.vec == 1]))
 }
 
+# TODO: Aaron: what is the size factor? Why is this not in cpp?
+
 #' estimate size factor s(vector)
 #' *The resulted si's have the product of 1. (commonly used strategy in many methods such as DESeq2 and edgeR in calculating the normalization factor)
 #'
 #' @param Ycount a n-by-p count matrix Y, where n is the number of samples and p is the number of taxa(feature)
 #' @export
 sizefactor.estimator = function(Ycount){
+  # TODO: if( !(class(Ycount) %in% c("matrix") )) stop("Ycount must be a matrix")
   n = dim(Ycount)[1]; p = dim(Ycount)[2]
   # get sample 50% quantiles aftering removing all 0's
   Y_rm0 = Ycount
@@ -56,6 +59,9 @@ sizefactor.estimator = function(Ycount){
   si.est = round(exp(log.si), 4)
   return(si.est)
 }
+
+
+# TODO: Aaron: What is the purpose of Bayes FDR? Why is this not in cpp?
 
 #' calculate the threshold for gamma / delta for FDR control
 #' @param PPI posterior probability of inclusion

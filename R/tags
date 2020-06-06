@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/1c004b3/
+BayFDR	functions.R	/^BayFDR <- function(PPI, alpha){$/;"	f
+K	functions.R	/^  K = 2$/;"	v	function:Y.filter
+PPI_sorted	functions.R	/^  PPI_sorted = sort(PPI,decreasing = TRUE)$/;"	v	function:BayFDR
+Y.filter	functions.R	/^Y.filter = function(Ycount, zvec, min.number = 2){$/;"	f
+Y_rm0	functions.R	/^  Y_rm0 = Ycount$/;"	v	function:sizefactor.estimator
+cut.point	functions.R	/^  cut.point = table(zvec) - min.number$/;"	v	function:Y.filter
+delta_ROC	functions.R	/^delta_ROC = function(deltaPPI.raw, delta.true){$/;"	f
+disc.ppi	functions.R	/^  disc.ppi = gammaPPI.raw[gamma.true==1]$/;"	v	function:gamma_VS
+fdr	functions.R	/^  fdr = 0$/;"	v	function:BayFDR
+filter.vec	functions.R	/^  filter.vec = rep(1, p)$/;"	v	function:Y.filter
+gamma_VS	functions.R	/^gamma_VS = function(gammaPPI.raw, gamma.true, sig.level = 0.05){$/;"	f
+group_size	functions.R	/^      group_size = 0; zero_count = 0;$/;"	v	function:Y.filter
+i	functions.R	/^      for(i in 1:n){$/;"	v	function:Y.filter
+i	functions.R	/^  for(i in 1:n){$/;"	v	function:sizefactor.estimator
+j	functions.R	/^    for(j in 1:p){$/;"	v	function:sizefactor.estimator
+j	functions.R	/^  for(j in 1:p){$/;"	v	function:Y.filter
+k	functions.R	/^    for(k in 1:K){$/;"	v	function:Y.filter
+k	functions.R	/^  k = 1$/;"	v	function:BayFDR
+log.si	functions.R	/^  log.si = log(si.vec) - mean(log(si.vec))$/;"	v	function:sizefactor.estimator
+n	functions.R	/^  n = dim(Ycount)[1]; p = dim(Ycount)[2]$/;"	v	function:sizefactor.estimator
+n	functions.R	/^  n = dim(Ycount)[1];p = dim(Ycount)[2]$/;"	v	function:Y.filter
+p	functions.R	/^  n = dim(Ycount)[1]; p = dim(Ycount)[2]$/;"	v	function:sizefactor.estimator
+p	functions.R	/^  n = dim(Ycount)[1];p = dim(Ycount)[2]$/;"	v	function:Y.filter
+return.value	functions.R	/^  return.value = PPI_sorted[k]$/;"	v	function:BayFDR
+roc.delta	functions.R	/^  roc.delta = roc(response = delta.true, predictor = deltaPPI.raw,$/;"	v	function:delta_ROC
+sample_Q50	functions.R	/^  sample_Q50 = apply(Y_rm0, 1, quantile, probs = 0.5, na.rm = T)$/;"	v	function:sizefactor.estimator
+si.est	functions.R	/^  si.est = round(exp(log.si), 4)$/;"	v	function:sizefactor.estimator
+si.vec	functions.R	/^  si.vec = rep(0, n)$/;"	v	function:sizefactor.estimator
+sizefactor.estimator	functions.R	/^sizefactor.estimator = function(Ycount){$/;"	f
+th.gamma	functions.R	/^  th.gamma = BayFDR(gammaPPI.raw, sig.level)$/;"	v	function:gamma_VS
+zero_count	functions.R	/^      group_size = 0; zero_count = 0;$/;"	v	function:Y.filter
+zinb_w_cov	RcppExports.R	/^zinb_w_cov <- function(Y_mat, X_mat, z_vec, s_vec, tau_mukj = 1, S = 20000L, burn_rate = 0.5, ta/;"	f
