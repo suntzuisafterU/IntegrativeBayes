@@ -7,7 +7,7 @@
 using namespace Rcpp;
 
 // zinb_w_cov
-List zinb_w_cov(NumericMatrix Y_mat, NumericMatrix X_mat, NumericVector z_vec, NumericVector s_vec, double tau_mukj, int S, double burn_rate, double tau_mu0, double tau_phi, double tau_beta, double a_omega, double b_omega, double a_pi, double b_pi, double a_p, double b_p, double a_mu, double b_mu, double a_phi, double b_phi, double a_beta, double b_beta, double mu0_mean, double beta_lim);
+// TODO: Aaron: Here is the MCMC implementation? List zinb_w_cov(NumericMatrix Y_mat, NumericMatrix X_mat, NumericVector z_vec, NumericVector s_vec, double tau_mukj, int S, double burn_rate, double tau_mu0, double tau_phi, double tau_beta, double a_omega, double b_omega, double a_pi, double b_pi, double a_p, double b_p, double a_mu, double b_mu, double a_phi, double b_phi, double a_beta, double b_beta, double mu0_mean, double beta_lim);
 RcppExport SEXP _IntegrativeBayes_zinb_w_cov(SEXP Y_matSEXP, SEXP X_matSEXP, SEXP z_vecSEXP, SEXP s_vecSEXP, SEXP tau_mukjSEXP, SEXP SSEXP, SEXP burn_rateSEXP, SEXP tau_mu0SEXP, SEXP tau_phiSEXP, SEXP tau_betaSEXP, SEXP a_omegaSEXP, SEXP b_omegaSEXP, SEXP a_piSEXP, SEXP b_piSEXP, SEXP a_pSEXP, SEXP b_pSEXP, SEXP a_muSEXP, SEXP b_muSEXP, SEXP a_phiSEXP, SEXP b_phiSEXP, SEXP a_betaSEXP, SEXP b_betaSEXP, SEXP mu0_meanSEXP, SEXP beta_limSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;

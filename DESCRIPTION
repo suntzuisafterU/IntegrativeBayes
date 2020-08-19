@@ -5,7 +5,7 @@ Authors@R: c(person(given = "Shuang", family = "Jiang", role = c("aut", "cre"), 
 	   person(given = "Qiwei", family = "Li", role = c("aut"), email = "qiwei.li@utsouthwestern.edu"),
 	   person(given = "Xiaowei", family = "Zhan", role = c("aut"), email = "xiaowei.zhan@utsouthwestern.edu"))
 Maintainer: Shuang Jiagn <shuangj@mail.smu.edu>
-Description:Joint analysis of detecting differentially abundant features from high-throughput sequencing count data and quantifying the covariate-feature associations. Provides functions that (1) sets up and fits the integrative Bayesian ZINB regression model, (2) generates numerical and graphical results of fitted models.
+Description: Joint analysis of detecting differentially abundant features from high-throughput sequencing count data and quantifying the covariate-feature associations. Provides functions that (1) sets up and fits the integrative Bayesian ZINB regression model, (2) generates numerical and graphical results of fitted models.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -13,7 +13,7 @@ LinkingTo:
     Rcpp,RcppArmadillo
 Imports: 
     Rcpp
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 Suggests: 
     knitr,
     rmarkdown
